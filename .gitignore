@@ -1,0 +1,4 @@
+config_full.js
+config/db_full.js
+package-lock.json
+node_modules
