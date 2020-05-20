@@ -10,7 +10,7 @@ module.exports = function(app, client) {
       } else {
         resp.send({ type: "success" });
       }
-      client.close();
+      // client.close();
     });
   });
 
@@ -21,11 +21,11 @@ module.exports = function(app, client) {
 
     products.find(note).toArray((err, result) => {
       if (err) {
-        resp.send({ error: "An error has occurred" });
+        resp.send(err);
       } else {
         resp.send({ type: "success" });
       }
-      db.close();
+      // client.close();
     });
   });
 
@@ -50,7 +50,7 @@ module.exports = function(app, client) {
         console.log("document updated, id:", req.body.id);
         resp.send({ type: "document updated" });
       }
-      db.close();
+      // client.close();
     });
   });
 };

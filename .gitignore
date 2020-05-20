@@ -1,4 +1,6 @@
 config_full.js
+config.js
+config/db.js
 config/db_full.js
 package-lock.json
 node_modules
