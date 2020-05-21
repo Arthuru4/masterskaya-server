@@ -1,0 +1,19 @@
+version: "2"
+services:
+  server:
+    build: ./../server/
+    ports:
+      - "3002:3002"
+    restart: always
+
+#  client:
+#    build: ./../masterskaya/
+#    ports:
+#      - "3000:3000"
+#    volumes:
+#      - ./../masterskaya/src:/usr/src/app/src
+#      - ./../masterskaya/public:/usr/src/app/public
+#    stdin_open: true
+#    depends_on:
+#      - server
+#    command: npm start
